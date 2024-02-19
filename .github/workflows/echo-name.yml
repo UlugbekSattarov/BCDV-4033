@@ -1,0 +1,14 @@
+name: Echo Ulugbek Sattarov
+
+on: 
+  push:
+    branches: [ main ] 
+
+jobs:
+  echo_name:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Echo My Name
+        run: echo "My name is Ulugbek Sattarov"
